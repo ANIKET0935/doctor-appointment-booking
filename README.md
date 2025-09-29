@@ -1,30 +1,3 @@
-# 🏥 Doctor Appointment Booking System
-
-A web-based application that allows patients to book, manage, and track doctor appointments easily. This project is designed to improve healthcare accessibility by digitizing the appointment booking process for both patients and doctors.
-
----
-
-## 🚀 Features
-
-* 👨‍⚕️ **User Authentication**: Secure login and registration for patients and doctors
-* 📅 **Appointment Scheduling**: Book, reschedule, or cancel appointments
-* 🔍 **Doctor Search**: Find doctors by specialty, availability, or location
-* 📊 **Admin Dashboard**: Manage doctors, patients, and appointments
-* 📢 **Notifications**: Appointment confirmation and reminders (email/SMS integration possible)
-* 💳 **Payment Integration** (optional): Online payment for consultations
-
----
-
-## 🛠️ Tech Stack
-
-* **Frontend**: HTML, CSS, JavaScript (Bootstrap/React if used)
-* **Backend**: PHP / Node.js / Python (depending on your implementation)
-* **Database**: MySQL / MongoDB
-* **Tools**: Git, GitHub, VS Code
-
----
-
-## 📂 Project Structure
 
 Doctor-Appointment-Booking/
 # 🏥 Doctor Appointment Booking System
