@@ -72,7 +72,7 @@ Doctor-Appointment-Booking/
 │
 └── includes/
 ├── header.php
-
+---
 ## ⚙️ Installation & Setup
 
 1. **Clone the Repository**
