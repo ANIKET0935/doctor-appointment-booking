@@ -26,18 +26,51 @@ A web-based application that allows patients to book, manage, and track doctor a
 
 ## 📂 Project Structure
 
-```
 Doctor-Appointment-Booking/
-│── index.html
-│── login.html
-│── register.html
-│── dashboard.html
-│── /css
-│── /js
-│── /images
-│── /backend (server-side code)
-│── README.md
-```
+│── README.md                 # Project description
+│── index.html                # Homepage
+│── login.html                # Patient/Doctor login
+│── register.html             # Registration form
+│── about.html                # About the system
+│── contact.html              # Contact page
+│
+├── /admin                    # Admin module
+│   ├── dashboard.php
+│   ├── manage_doctors.php
+│   ├── manage_patients.php
+│   ├── manage_appointments.php
+│   └── ...
+│
+├── /patient                  # Patient module
+│   ├── book_appointment.php
+│   ├── my_appointments.php
+│   ├── profile.php
+│   └── ...
+│
+├── /doctor                   # Doctor module
+│   ├── dashboard.php
+│   ├── appointments.php
+│   ├── schedule.php
+│   └── ...
+│
+├── /assets                   # Static resources
+│   ├── /css
+│   │   └── style.css
+│   ├── /js
+│   │   └── script.js
+│   └── /images
+│       └── logo.png
+│
+├── /database
+│   └── doctor_appointment.sql   # Database schema
+│
+├── /config
+│   └── config.php               # DB connection settings
+│
+└── /includes
+    └── header.php
+    └── footer.php
+
 
 ---
 
