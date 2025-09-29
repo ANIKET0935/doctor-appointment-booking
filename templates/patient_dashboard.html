@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+  body {
+    background: url('{{ url_for("static", filename="image/bg1.jpg") }}') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .dashboard-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dashboard-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .dashboard-container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #555;
+  }
+
+  .doctor-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .doctor-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .doctor-list li:hover {
+    background: #e6f7ff;
+  }
+
+  .doctor-list .btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    text-decoration: none;
+  }
+
+  .doctor-list .btn:hover {
+    background-color: #218838;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .dashboard-container {
+      padding: 30px 20px;
+    }
+
+    .doctor-list li {
+      padding: 12px;
+    }
+  }
+</style>
+
+<div class="dashboard-container">
+  <h2>Welcome to Your Dashboard</h2>
+  <h3>Available Doctors</h3>
+  
+  <!-- Doctor List -->
+  <ul class="doctor-list">
+    {% for doctor in doctors %}
+      <li>
+        <strong>{{ doctor[1] }}</strong> - {{ doctor[4] }}
+        <a href="/book_appointment/{{ doctor[0] }}" class="btn">Book Appointment</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+  body {
+    background: url('{{ url_for("static", filename="image/bg1.jpg") }}') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .welcome-container {
+    background: rgba(255, 255, 255, 0.1);
+    /* backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    max-width: 450px;
+    width: 90%;
+  }
+
+  .welcome-container h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 600px) {
+    .welcome-container {
+      padding: 30px 20px;
+    }
+
+    .btn {
+      display: block;
+      margin: 10px auto;
+      width: 100%;
+    }
+  }
+</style>
+
+<div class="container">
+    <div class="welcome-container">
+        <h2>Register</h2>
+        <a href="/register/patient" class="btn">Register as Patient</a><br>
+        <a href="/register/doctor" class="btn">Register as Doctor</a>
+    </div>
+</div>
+{% endblock %}

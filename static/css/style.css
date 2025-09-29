@@ -1,0 +1,67 @@
+/* Global Body Styles */
+body {
+    background-image: url('https://images.unsplash.com/photo-1588776814546-ec7ee08b0f83?auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #000;
+}
+
+/* Welcome Page Styles */
+.welcome-container {
+    background: rgba(255, 255, 255, 0.1);
+    /* backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    max-width: 450px;
+    width: 90%;
+}
+
+.welcome-container h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .welcome-container {
+        padding: 30px 20px;
+    }
+
+    .btn {
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+    }
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.85); /* Makes content readable */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
